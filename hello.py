@@ -1,3 +1,3 @@
 print("hello123456")
-print(time.time())
+print(time.asctime())
 
