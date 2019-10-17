@@ -14,6 +14,6 @@ suite.addTest(TestEmployee("test_emp_delete"))
 
 # runner=unittest.TextTestRunner()
 # runner.run(suite)
-bea_report="ihrm{}.html".format(time.strftime("%Y%m%d%H%M%S"))
+# bea_report="ihrm{}.html".format(time.strftime("%Y%m%d%H%M%S"))
 
-BeautifulReport(suite).report(filename=bea_report,description="人力资源测试报告",log_path="./report_test/")
+BeautifulReport(suite).report(filename="bea_report",description="人力资源测试报告",log_path="./report_test/")
