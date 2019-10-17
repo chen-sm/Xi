@@ -1,8 +1,6 @@
-
+import time
 import unittest
-
-# from day07.ihrm_system.case.TestIHRMEmploye import TestEmployee
-# from day07.ihrm_system.case.TestIHRMUser import TestUser
+from BeautifulReport import BeautifulReport
 from case.TestIHRMEmploye import TestEmployee
 from case.TestIHRMUser import TestUser
 
@@ -14,5 +12,8 @@ suite.addTest(TestEmployee("test_emp_get"))
 suite.addTest(TestEmployee("test_emp_delete"))
 
 
-runner=unittest.TextTestRunner()
-runner.run(suite)
+# runner=unittest.TextTestRunner()
+# runner.run(suite)
+bea_report="ihrm{}.html".format(time.strftime("%Y%m%d%H%M%S"))
+
+BeautifulReport(suite).report(filename=bea_report,description="人力资源测试报告",log_path="./report_test/")
