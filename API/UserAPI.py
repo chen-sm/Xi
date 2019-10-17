@@ -3,9 +3,12 @@
 """
 import logging
 
-from day07.ihrm_system import app
+# from day07.ihrm_system import app
 
 # 封装登录请求
+import app
+
+
 class UserLoign:
 
     # 登录请求

@@ -1,8 +1,10 @@
 
 import unittest
 
-from day07.ihrm_system.case.TestIHRMEmploye import TestEmployee
-from day07.ihrm_system.case.TestIHRMUser import TestUser
+# from day07.ihrm_system.case.TestIHRMEmploye import TestEmployee
+# from day07.ihrm_system.case.TestIHRMUser import TestUser
+from case.TestIHRMEmploye import TestEmployee
+from case.TestIHRMUser import TestUser
 
 suite=unittest.TestSuite()
 suite.addTest( TestUser("test_login_success"))

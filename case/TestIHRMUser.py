@@ -8,8 +8,10 @@ import requests
 # 编写Json解析数据
 from parameterized import parameterized
 
-from day07.ihrm_system import app
-from day07.ihrm_system.API.UserAPI import UserLoign
+# from day07.ihrm_system import app
+# from day07.ihrm_system.API.UserAPI import UserLoign
+import app
+from API.UserAPI import UserLoign
 
 
 def read_json():

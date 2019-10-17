@@ -4,8 +4,10 @@ import unittest
 # 创建测试类
 import requests
 
-from day07.ihrm_system import app
-from day07.ihrm_system.API.EmpAPI import EmpCRUD
+# from day07.ihrm_system import app
+# from day07.ihrm_system.API.EmpAPI import EmpCRUD
+import app
+from API.EmpAPI import EmpCRUD
 
 
 class TestEmployee(unittest.TestCase):

@@ -1,4 +1,5 @@
-from day07.ihrm_system import app
+# from day07.ihrm_system import app
+import app
 
 
 class EmpCRUD:
